@@ -21,7 +21,6 @@ function print(pos, letter, log = true) {
   return copy
 }
 
-const levels = "SabcdefghijklmnopqrstuvwxyzE"
 const checkLetter = (curr: string, next: string) => {
   return next.charCodeAt(0) - curr.charCodeAt(0) <= 1
 }
