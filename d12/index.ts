@@ -22,6 +22,10 @@ function print(pos, letter, log = true) {
 }
 
 const checkLetter = (curr: string, next: string) => {
+  // special case
+  if (curr === "S") {
+    return true
+  }
   return next.charCodeAt(0) - curr.charCodeAt(0) <= 1
 }
 
@@ -69,4 +73,4 @@ function lookup(start: string, end) {
 console.log(lookup("S", "E"))
 
 // p2
-console.log(lookup("a", "E"))
+// console.log(lookup("a", "E"))
